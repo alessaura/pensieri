@@ -90,66 +90,63 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
+
+      {/* Hero Section - REDESENHADA SEM IMAGEM */}
       <section
         ref={heroRef}
         className="relative min-h-screen flex items-center bg-emerald-900 dark:bg-emerald-950 text-white overflow-hidden"
       >
-         <div
-              className="absolute inset-0 opacity-10"
-              style={{
-                backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23ffffff' fillOpacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4H6zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-              }}
-            ></div>
-      <div className="absolute inset-y-0 right-0 w-1/2 md:w-1/3 pointer-events-none z-0">
-        <img
-          src="/imagem-banner.png"
-          alt="Ilustração representando comunicação"
-          className="w-full h-full object-contain mix-blend-lighten"
-        />
-      </div>
+        {/* Textura de fundo sutil */}
+        <div
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23ffffff' fillOpacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4H6zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }}
+        ></div>
+
+        {/* Elementos decorativos geométricos */}
+        <div className="absolute top-1/4 right-10 w-1 h-32 bg-gradient-to-b from-emerald-400 to-transparent opacity-60"></div>
+        <div className="absolute top-1/3 left-10 w-1 h-48 bg-gradient-to-b from-emerald-400 to-transparent opacity-60"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-32 h-1 bg-gradient-to-r from-transparent to-emerald-400 opacity-60"></div>
+        <div className="absolute top-20 right-1/3 w-20 h-20 border border-emerald-400/30 rounded-full"></div>
+        <div className="absolute bottom-32 left-1/4 w-16 h-16 border border-emerald-400/30 transform rotate-45"></div>
 
         {/* Content */}
         <div className="container mx-auto px-6 relative z-10 pt-24 pb-16 md:py-0">
-          <div className="max-w-3xl">
-            <AnimatedElement animation="fade-down" duration={1000} delay={300}>
-              <div className="flex items-center space-x-3 mb-8">
-                <div className="w-12 h-[1px] bg-emerald-400"></div>
-                <span className="text-emerald-300 uppercase tracking-widest text-sm font-medium">Desde 1993</span>
-              </div>
-            </AnimatedElement>
+          <div className="flex items-center justify-center min-h-[80vh]">
+            <div className="max-w-4xl mx-auto text-center">
+              <AnimatedElement animation="fade-down" duration={1000} delay={300}>
+                <div className="flex items-center justify-center space-x-3 mb-8">
+                  <div className="w-12 h-[1px] bg-emerald-400"></div>
+                  <span className="text-emerald-300 uppercase tracking-widest text-sm font-medium">Desde 1993</span>
+                  <div className="w-12 h-[1px] bg-emerald-400"></div>
+                </div>
+              </AnimatedElement>
 
-            <AnimatedElement animation="fade-up" duration={1000} delay={500}>
-              <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                <span className="block">Pensieri</span>
-                <span className="text-emerald-300 italic">Comunicação</span>
-              </h1>
-            </AnimatedElement>
+              <AnimatedElement animation="fade-up" duration={1000} delay={500}>
+                <h1 className="font-serif text-5xl md:text-7xl font-bold mb-8 leading-tight">
+                  <span className="block">Pensieri</span>
+                  <span className="text-emerald-300 italic">Comunicação</span>
+                </h1>
+              </AnimatedElement>
 
-            <AnimatedElement animation="fade-up" duration={1000} delay={700}>
-              <p className="text-xl md:text-2xl font-light mb-10 leading-relaxed max-w-xl">
-                Ideias que conectam, mensagens que transformam.
-              </p>
-            </AnimatedElement>
+              <AnimatedElement animation="fade-up" duration={1000} delay={700}>
+                <p className="text-xl md:text-2xl font-light mb-12 leading-relaxed max-w-2xl mx-auto">
+                  Ideias que conectam, mensagens que transformam.
+                </p>
+              </AnimatedElement>
 
-          <AnimatedElement animation="fade-up" duration={1000} delay={900}>
-            <div className="flex flex-wrap gap-4">
-              <Button
-                className="bg-white !text-emerald-900 hover:bg-emerald-50 dark:bg-emerald-700 dark:text-white dark:hover:bg-emerald-600 rounded-none px-8 py-6 group"
-              >
-                <span className="transition-colors duration-300">Conheça nosso catálogo</span>
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </Button>
+              <AnimatedElement animation="fade-up" duration={1000} delay={900}>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <Button className="bg-white !text-emerald-900 hover:bg-emerald-50 dark:bg-emerald-700 dark:text-white dark:hover:bg-emerald-600 rounded-none px-8 py-6 group">
+                    <span className="transition-colors duration-300">Conheça nosso catálogo</span>
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </Button>
 
-              <Button
-                variant="outline"
-                className="border-emerald-900 text-emerald-900 hover:bg-emerald-50 hover:text-emerald-900 rounded-none px-8 py-6 transition-colors duration-300"
-              >
-                Nossa história
-              </Button>
-
+              <Button                 variant="outline"                 className="border-emerald-900 text-emerald-900 hover:bg-emerald-50 hover:text-emerald-900 rounded-none px-8 py-6 transition-colors duration-300"               >                 Nossa história               </Button>
+                </div>
+              </AnimatedElement>
             </div>
-          </AnimatedElement>
           </div>
         </div>
 
@@ -321,7 +318,7 @@ export default function Home() {
               </span>
               <div className="w-12 h-[1px] bg-emerald-500"></div>
             </div>
-            <h2 className="font-serif text-5xl font-bold mb-6 text-neutral-800 dark:text-white">Editoração</h2>
+            <h2 className="font-serif text-5xl font-bold mb-6 text-neutral-800 dark:text-white">Editora</h2>
             <p className="text-neutral-600 dark:text-neutral-300 text-xl italic font-serif">
               "Inovar não é rejeitar a tradição; é como abrir as portas e janelas para acolher os novos ventos"
             </p>
@@ -608,9 +605,9 @@ export default function Home() {
                             Marketing Institucional
                           </h3>
                         </div>
-                        <p className="text-neutral-600 dark:text-neutral-300 text-lg">
+                        {/* <p className="text-neutral-600 dark:text-neutral-300 text-lg">
                           Estratégias personalizadas para fortalecer a imagem da sua instituição no mercado.
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                   </AnimatedElement>
@@ -627,9 +624,9 @@ export default function Home() {
                             Marketing Pessoal
                           </h3>
                         </div>
-                        <p className="text-neutral-600 dark:text-neutral-300 text-lg">
+                        {/* <p className="text-neutral-600 dark:text-neutral-300 text-lg">
                           Desenvolvimento da sua imagem pessoal com autenticidade e propósito.
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                   </AnimatedElement>
